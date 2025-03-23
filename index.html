@@ -1,0 +1,292 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta name="description" content="Official website for THE SUDARSHAN's FADE OFF release. Listen to the latest tracks and watch music videos."/>
+  <meta name="keywords" content="music, fade off, the sudarshan, latest songs, youtube, spotify, soundcloud, music player"/>
+  <meta name="author" content="THE SUDARSHAN"/>
+  <meta property="og:title" content="FADE OFF - THE SUDARSHAN Official Website"/>
+  <meta property="og:description" content="Official website for THE SUDARSHAN's FADE OFF release. Listen to the latest tracks and watch music videos."/>
+  <meta property="og:image" content="https://psysudarsan.com/background.jpg"/>
+  <meta property="og:url" content="https://thesudarshan.com"/>
+  <title>FADE OFF - THE SUDARSHAN</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <!-- Add a modern font (e.g., Montserrat) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    /* Smooth scroll behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+    /* Custom keyframes for animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes scaleIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    @keyframes pulseGlow {
+      0% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+      }
+      50% {
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+      }
+      100% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+      }
+    }
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(90deg);
+      }
+    }
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-10px);
+      }
+      60% {
+        transform: translateY(-5px);
+      }
+    }
+    /* Apply fade-in animation to hero content */
+    .animate-fadeInUp {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    /* Apply scale-in animation to modals */
+    .modal-content {
+      animation: scaleIn 0.3s ease-out forwards;
+    }
+    /* Apply pulse glow to three-dot button */
+    .pulse-glow {
+      animation: pulseGlow 2s infinite;
+    }
+    /* Apply bounce animation to buttons on click */
+    .bounce {
+      animation: bounce 0.5s;
+    }
+    /* Glassmorphism effect for modals */
+    .glassmorphism {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    /* Parallax effect for hero background */
+    .parallax {
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+    }
+    /* Underline animation for modal links */
+    .modal-link {
+      position: relative;
+    }
+    .modal-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background-color: currentColor;
+      transition: width 0.3s ease;
+    }
+    .modal-link:hover::after {
+      width: 100%;
+    }
+  </style>
+</head>
+<body class="bg-black text-white font-montserrat">
+
+  <!-- Hero Section -->
+  <div class="relative h-screen">
+    <!-- Background Image with Parallax Effect -->
+    <div class="absolute inset-0 parallax" style="background-image: url('https://sudarshan.com/background.jpg');"></div>
+    <!-- Gradient Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70"></div>
+    <div class="relative z-10 flex flex-col justify-between h-full p-4 sm:p-8">
+      <div>
+        <h1 class="text-4xl sm:text-5xl font-bold text-white animate-fadeInUp">FADE OFF</h1>
+        <p class="text-lg sm:text-xl mt-2 animate-fadeInUp" style="animation-delay: 0.2s;">BY THE SUDARSHAN</p>
+        <p class="text-lg sm:text-xl mt-2 animate-fadeInUp" style="animation-delay: 0.4s;">OUT NOW</p>
+        <button class="text-base sm:text-lg mt-4 bg-white text-black px-4 py-2 rounded-lg transition duration-300 hover:bg-gray-300 hover:shadow-[0_0_15px_rgba(255,255,255,0.8)] focus:outline-none" id="listenNowBtn" onclick="this.classList.add('bounce')">LISTEN NOW</button>
+      </div>
+      <div class="flex space-x-4">
+        <a class="text-white transition duration-300 hover:scale-125 hover:text-blue-500" href="https://www.facebook.com/SudarshanKc.777"><i class="fab fa-facebook-f"></i></a>
+        <a class="text-white transition duration-300 hover:scale-125 hover:text-blue-400" href="#"><i class="fab fa-twitter"></i></a>
+        <a class="text-white transition duration-300 hover:scale-125 hover:text-pink-400" href="https://www.instagram.com/psysudarshan?fbclid=IwY2xjawJMg0FleHRuA2FlbQIxMAABHW4yHhI9Pk_ahwb0Oh4r3AU9C6cpn-6USiTQqlPfu9EaBXKNFQlZdAcHJg_aem_rIbu12kIW3jcJz-WWgxxCQ"><i class="fab fa-instagram"></i></a>
+        <a class="text-white transition duration-300 hover:scale-125 hover:text-red-600" href="https://www.youtube.com/@TheSudarshanOfficial/videos"><i class="fab fa-youtube"></i></a>
+        <a class="text-white transition duration-300 hover:scale-125 hover:text-green-500" href="https://open.spotify.com/artist/3E3BboXKsqNWzn6iZj0Ddf?si=hjqIuqVDRly1vMHI3yDVDw&utm_medium=share&utm_source=linktree&nd=1&dlsi=d292b1edd2a24f4e"><i class="fab fa-spotify"></i></a>
+      </div>
+    </div>
+
+    <!-- Logo (Top Right) -->
+    <div class="absolute top-4 right-4 z-50">
+      <img src="img/mood.png" alt="THE SUDARSHAN Logo" class="w-16 sm:w-20 h-16 sm:h-20 rounded-full shadow-lg transition duration-300 hover:scale-105 hover:shadow-[0_0_10px_rgba(255,255,255,0.5)]"/>
+    </div>
+
+    <!-- Menu Button (Top Right) -->
+    <div class="absolute top-4 right-24 sm:right-28 flex items-center space-x-4 z-50">
+      <button class="text-white text-xl sm:text-2xl bg-gray-800 p-3 rounded-full transition duration-300 hover:scale-110 hover:shadow-[0_0_15px_rgba(255,255,255,0.8)] pulse-glow" id="menuBtn" aria-label="Open menu">
+        <i class="fas fa-ellipsis-v transition-transform duration-300"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Music Section (Scrollable) -->
+  <div class="py-12 px-4 sm:px-8">
+    <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center animate-fadeInUp">Latest Songs by THE SUDARSHAN</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+      <!-- Song 1 -->
+      <div class="text-center animate-fadeInUp" style="animation-delay: 0.1s;">
+        <img src="img/fade.jpg" class="w-full cursor-pointer rounded-lg transition duration-300 hover:scale-105 hover:shadow-[0_0_10px_rgba(255,255,255,0.5)]" onclick="playSong('-x66suBXFu8')"/>
+        <p class="mt-2 text-sm">FADE OFF</p>
+      </div>
+      <!-- Song 2 -->
+      <div class="text-center animate-fadeInUp" style="animation-delay: 0.2s;">
+        <img src="img/mood.jpg" class="w-full cursor-pointer rounded-lg transition duration-300 hover:scale-105 hover:shadow-[0_0_10px_rgba(255,255,255,0.5)]" onclick="playSong('Hdr17f97hlI')"/>
+        <p class="mt-2 text-sm">MOOD</p>
+      </div>
+      <!-- Song 3 -->
+      <div class="text-center animate-fadeInUp" style="animation-delay: 0.3s;">
+        <img src="img/thats.jpg" class="w-full cursor-pointer rounded-lg transition duration-300 hover:scale-105 hover:shadow-[0_0_10px_rgba(255,255,255,0.5)]" onclick="playSong('7Fm3j9-7aE4')"/>
+        <p class="mt-2 text-sm">THAT'S HOW WE DO</p>
+      </div>
+      <!-- Song 4 -->
+      <div class="text-center animate-fadeInUp" style="animation-delay: 0.4s;">
+        <img src="img/mood.png" class="w-full cursor-pointer rounded-lg transition duration-300 hover:scale-105 hover:shadow-[0_0_10px_rgba(255,255,255,0.5)]" onclick="playSong('H86GLbQguWU')"/>
+        <p class="mt-2 text-sm">HER CALL</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- YOUTUBE PLAYER (Appears when song is clicked) -->
+  <div class="fixed bottom-4 sm:bottom-10 left-1/2 transform -translate-x-1/2 bg-gray-900 p-4 rounded-lg hidden w-11/12 sm:w-auto" id="playerContainer">
+    <iframe id="youtubePlayer" width="100%" height="150" sm:height="200" src="" frameborder="0" allowfullscreen class="sm:w-[300px] sm:h-[200px]"></iframe>
+    <button class="mt-2 bg-red-600 text-white px-4 py-2 rounded w-full sm:w-auto transition duration-300 hover:scale-105 hover:shadow-[0_0_10px_rgba(255,0,0,0.8)]" onclick="closePlayer(); this.classList.add('bounce')">Close</button>
+  </div>
+
+  <!-- LISTEN ON MODAL -->
+  <div class="modal fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden" id="modal">
+    <div class="glassmorphism text-white p-6 sm:p-8 rounded-lg relative w-11/12 sm:w-auto modal-content">
+      <h2 class="text-xl sm:text-2xl font-bold mb-4">Listen on:</h2>
+      <div class="flex flex-col space-y-4">
+        <a class="text-base sm:text-lg text-blue-400 modal-link" href="https://www.facebook.com/SudarshanKc.777"><i class="fab fa-facebook-f mr-2"></i>Facebook</a>
+        <a class="text-base sm:text-lg text-red-400 modal-link" href="https://www.youtube.com/@TheSudarshanOfficial/videos"><i class="fab fa-youtube mr-2"></i>YouTube</a>
+        <a class="text-base sm:text-lg text-green-400 modal-link" href="https://open.spotify.com/artist/3E3BboXKsqNWzn6iZj0Ddf?si=hjqIuqVDRly1vMHI3yDVDw&utm_medium=share&utm_source=linktree"><i class="fab fa-spotify mr-2"></i>Spotify</a>
+        <a class="text-base sm:text-lg text-orange-400 modal-link" href="https://soundcloud.com/user-423899445?ref=clipboard&p=i&c=1&si=6EEFF72BCF8B4C69BFB29EA3A466E296&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"><i class="fab fa-soundcloud mr-2"></i>SoundCloud</a>
+      </div>
+      <button class="mt-6 bg-white text-black px-4 py-2 w-full sm:w-auto rounded transition duration-300 hover:scale-105 hover:shadow-[0_0_10px_rgba(255,255,255,0.8)]" id="closeModalBtn" onclick="this.classList.add('bounce')">Close</button>
+      <button class="absolute top-2 right-2 text-white transition duration-300 hover:scale-125" id="exitModalBtn"><i class="fas fa-times"></i></button>
+    </div>
+  </div>
+
+  <!-- MENU MODAL -->
+  <div class="modal fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden" id="menuModal">
+    <div class="glassmorphism text-white p-6 sm:p-8 rounded-lg relative w-11/12 sm:w-auto modal-content">
+      <h2 class="text-xl sm:text-2xl font-bold mb-4">Menu</h2>
+      <div class="flex flex-col space-y-4">
+        <a class="text-base sm:text-lg text-white modal-link hover:text-gray-300" href="#">Merch</a>
+        <a class="text-base sm:text-lg text-white modal-link hover:text-gray-300" href="#">Album</a>
+        <a class="text-base sm:text-lg text-white modal-link hover:text-gray-300" href="#">EP</a>
+        <a class="text-base sm:text-lg text-white modal-link hover:text-gray-300" href="#">Tours</a>
+        <a class="text-base sm:text-lg text-white modal-link hover:text-gray-300" href="#">Music</a>
+      </div>
+      <button class="mt-6 bg-white text-black px-4 py-2 w-full sm:w-auto rounded transition duration-300 hover:scale-105 hover:shadow-[0_0_10px_rgba(255,255,255,0.8)]" id="closeMenuModalBtn" onclick="this.classList.add('bounce')">Close</button>
+      <button class="absolute top-2 right-2 text-white transition duration-300 hover:scale-125" id="exitMenuModalBtn"><i class="fas fa-times"></i></button>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    // Listen On Modal Controls
+    const modal = document.getElementById('modal');
+    const listenNowBtn = document.getElementById('listenNowBtn');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const exitModalBtn = document.getElementById('exitModalBtn');
+
+    listenNowBtn.addEventListener('click', function () {
+      modal.classList.remove('hidden');
+    });
+    closeModalBtn.addEventListener('click', function () {
+      modal.classList.add('hidden');
+    });
+    exitModalBtn.addEventListener('click', function () {
+      modal.classList.add('hidden');
+    });
+
+    // Close Listen On modal if user clicks outside
+    modal.addEventListener('click', function (event) {
+      if (event.target === modal) {
+        modal.classList.add('hidden');
+      }
+    });
+
+    // Menu Modal Controls
+    const menuModal = document.getElementById('menuModal');
+    const menuBtn = document.getElementById('menuBtn');
+    const closeMenuModalBtn = document.getElementById('closeMenuModalBtn');
+    const exitMenuModalBtn = document.getElementById('exitMenuModalBtn');
+    const menuIcon = menuBtn.querySelector('i');
+
+    menuBtn.addEventListener('click', function (event) {
+      event.stopPropagation();
+      menuModal.classList.remove('hidden');
+      menuIcon.classList.add('rotate-90');
+    });
+
+    closeMenuModalBtn.addEventListener('click', function () {
+      menuModal.classList.add('hidden');
+      menuIcon.classList.remove('rotate-90');
+    });
+
+    exitMenuModalBtn.addEventListener('click', function () {
+      menuModal.classList.add('hidden');
+      menuIcon.classList.remove('rotate-90');
+    });
+
+    // Close Menu modal if user clicks outside
+    menuModal.addEventListener('click', function (event) {
+      if (event.target === menuModal) {
+        menuModal.classList.add('hidden');
+        menuIcon.classList.remove('rotate-90');
+      }
+    });
+
+    // YouTube Player Functions
+    const playerContainer = document.getElementById('playerContainer');
+    const youtubePlayer = document.getElementById('youtubePlayer');
+
+    function playSong(videoId) {
+      youtubePlayer.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+      playerContainer.classList.remove('hidden');
+    }
+
+    function closePlayer() {
+      youtubePlayer.src = "";
+      playerContainer.classList.add('hidden');
+    }
+  </script>
+</body>
+</html>
